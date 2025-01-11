@@ -1,0 +1,21 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Run bookstore-1",
+      "type": "java",
+      "request": "launch",
+      "mainClass": "customer.bookstore.Application",
+      "projectName": "bookstore",
+      "preLaunchTask": "Build bookstore",
+      "cwd": "${workspaceFolder}/bookstore",
+      "envFile": "${workspaceFolder}/bookstore/.env1",
+      "args": [
+        "--spring.profiles.active=default"
+      ],
+      "env": {
+        "run.config": "{\"handlerId\":\"cap_run_config_handler_id\",\"runnableId\":\"{\\\"projectPath\\\":\\\"/home/user/projects/1. Bookstore & Product-Service/bookstore\\\",\\\"profileName\\\":\\\"default\\\"}\"}"
+      }
+    }
+  ]
+}
